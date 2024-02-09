@@ -14,5 +14,8 @@ const fetchPrice = async(ctype)=>{
      const change = r.data.ticker.change;   
      const base = r.data.ticker.base;   
      const target = r.data.ticker.target;  
-     const time = r.data.timestamp;  
+     const time = r.data.timestamp; 
+     
+     
+     res.innerHTML = `${price}`;
 }
