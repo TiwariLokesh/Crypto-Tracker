@@ -1,8 +1,13 @@
 const form = document.querySelector("#searchForm");
 const res = document.querySelector("#tableResult");
-
+var upd;
 form.addEventListener('submit',(e)=>{
+
 e.preventDefault();   //refreshing will be prevented
+
+if(upd){
+    clearTimeout(upd);
+}
     const ctype = form.elements.coinType.value;
     fetchPrice(ctype);
 });
@@ -37,4 +42,6 @@ const fetchPrice = async(ctype)=>{
      <td>Last Update</td>
      <td>${time}</td>
    </tr>`;
+
+   upd= setTimeout(()=>fetchPrice(ctype),10000);
 }
