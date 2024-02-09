@@ -1,4 +1,6 @@
 const form = document.querySelector("#searchForm");
+const res = document.querySelector("#result");
+
 form.addEventListener('submit',(e)=>{
 e.preventDefault();   //refreshing will be prevented
     const ctype = form.elements.coinType.value;
