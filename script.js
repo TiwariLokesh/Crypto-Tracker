@@ -22,7 +22,7 @@ const fetchPrice = async(ctype)=>{
      const time = r.data.timestamp; 
      
      
-     res.innerHTML = ` <tr>
+     res.innerHTML = ` <tr style = "background-color:blue; color:white; font-weight:700;">
      <td>Property</td>
      <td>Value</td>
    </tr>
