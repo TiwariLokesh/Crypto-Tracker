@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>Crypto-Tracker</title>
-</head>
-<body>
-    <h1>Crypto Tracker</h1>
-    <h4>By Lokesh Tiwari</h4>
-    <form action="" id="searchForm">
-        <select name="coinType">
-            <option value="btc-usd">Bitcoin - USD</option>
-            <option value="doge-usd">Dogecoin - USD</option>
-            <option value="eth-usd">Etherum - USD</option>
-            <option value="btc-doge">Bitcoin - Dogecoin</option>
-            <option value="bnb-usd">Binance - USD</option>
-        </select>
-        <button type="submit">Get Price</button>
-    </form>
-<h4>Price : </h4>
-<h5 id="result"></h5>
+  </head>
+  <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> <!-- axios documentation-->
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="col-md-7 text-center">Crypto Tracker</h1>
+        <h4 class="col-md-7 text-center">By Lokesh Tiwari</h4>
+        <div class="col-md-6 row justify-content-center">
+          <div class="col-10">
+            <form action="" id="searchForm">
+              <select name="coinType">
+                <option value="btc-usd">Bitcoin - USD</option>
+                <option value="doge-usd">Dogecoin - USD</option>
+                <option value="eth-usd">Etherum - USD</option>
+                <option value="btc-doge">Bitcoin - Dogecoin</option>
+                <option value="bnb-usd">Binance - USD</option>
+              </select>
+              <button type="submit">Get Price</button>
+            </form>
+          </div>
+        </div>
+        <h4>Price :</h4>
+        <h5 id="result"></h5>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- axios documentation-->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
