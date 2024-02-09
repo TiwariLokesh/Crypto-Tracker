@@ -7,5 +7,10 @@ e.preventDefault();   //refreshing will be prevented
 
 const fetchPrice = async(ctype)=>{
     const r = await axios.get(`https://api.cryptonator.com/api/ticker/${ctype}`);
-    console.log(r.data.ticker.price);  //see from console date->ticker->price that we need to show
+     const price = r.data.ticker.price; //see from console date->ticker->price that we need to show
+     const volume = r.data.ticker.volume;
+     const change = r.data.ticker.change;   
+     const base = r.data.ticker.base;   
+     const target = r.data.ticker.target;  
+     const time = r.data.timestamp;  
 }
