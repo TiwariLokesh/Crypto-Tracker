@@ -13,7 +13,8 @@ if(upd){
 });
 
 const fetchPrice = async(ctype)=>{
-    const r = await axios.get(`https://api.cryptonator.com/api/ticker/${ctype}`);
+    const r = await axios.get(`https://api.coinstats.app/public/v1/coins/${ctype}?currency=INR`);
+    console.log(r);
      const price = r.data.ticker.price; //see from console date->ticker->price that we need to show
      const volume = r.data.ticker.volume;
      const change = r.data.ticker.change;   
