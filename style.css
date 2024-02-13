@@ -12,3 +12,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A7069F", en
 .container{
     background-color: purple;
 }
+.next{
+    padding: 80px;
+}
